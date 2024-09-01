@@ -1,1 +1,1 @@
-"# CS50-Python-Course" 
+Curso de Python da CS50 de Havard.
