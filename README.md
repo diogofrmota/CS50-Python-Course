@@ -1,1 +1,1 @@
-Curso de Python da CS50 de Havard.
+CS50's Python course from Harvard.
