@@ -1,13 +1,15 @@
 while True:
     try:
-        x, y = map(int, input("Fraction: ").split("/"))
+        x, y = map(int, input("Enter the fraction (format like X/Y): ").split("/"))
         if y == 0:
-            raise ZeroDivisionError
+            raise ZeroDivisionError("Denominator cannot be zero!")
         if x > y:
-            raise ValueError
+            raise ValueError("Numerator can't be higher than the denominator!")
         break
-    except (ValueError, ZeroDivisionError):
-        pass
+    except ZeroDivisionError as e:
+        print(e)
+    except ValueError as e:
+        print(e)
 
 percentage = round(x / y * 100)
 if percentage <= 1:
