@@ -1,5 +1,5 @@
 '''
-Notas
+Notes
 
 print("Hello world")
 
@@ -15,7 +15,7 @@ elif x > y:
 else:
     print("x is equal to y")
 
-    x = int(input("What's x? "))
+x = int(input("What's x? "))
 
 if x % 2 == 0:
     print("Even")
