@@ -1,10 +1,9 @@
-'''
-Anotações
-
-print("Hello, word")
+# Anotations
+print("Hello, world")
 
 name = input("What's your name? ")
 
+# Strips extra spaces from the name and capitalizes it
 name = name.strip().title()
 
 print(f"Hello, {name}")
@@ -12,23 +11,25 @@ print(f"Hello, {name}")
 x = int(input("What's x? "))
 y = int(input("What's y? "))
 
+# Prints the sum of x and y
 print(x + y)
 
-float para numeros por exemplo 1.2, 2.7
+# Floats are for numbers like 1.2 or 2.7
 
-E se quiser aredondar o número para o integer mais proximo? ou seja 2.3 fica 2 usar round()
+# If you want to round a number to its nearest integer, 
+# like converting 2.3 to 2, use round()
 
 z = round(x / y, 2)
 
 def hello(to):
+    # Displays a hello message to the given person
     print("Hello,", to)
 
 name = input("What's your name? ")
 hello(name)
-'''
 
 def compute(m, c=300000000):
+    # Computes E=mc^2
     return m * c * c
-
 
 print("E=", compute(int(input("m: "))))
