@@ -1,9 +1,8 @@
 def main():
     s = input("Greetings: ")
-    print(f"${value(s)}")
+    print("Your value is {}".format(get_value(s)))
 
-
-def value(greeting):
+def get_value(greeting):
     greeting = greeting.strip().lower()
     if greeting.startswith("hello"):
         return 0
@@ -11,7 +10,6 @@ def value(greeting):
         return 20
     else:
         return 100
-
 
 if __name__ == "__main__":
     main()
